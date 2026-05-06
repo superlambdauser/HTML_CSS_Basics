@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Kings Regular";
+    src: url(fonts/Kings-Regular.ttf);
+}
+
+.infobulle {
+    font-size: small;
+}
+
+body {
+    background-color: tomato;
+}
+
+p {
+    background-color: antiquewhite;
+}
+
+.main_title {
+    height: 300px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url("images/banner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1, h2, h3 {
+    font-family: "Kings Regular";
+}
+
+.main_title h1 {
+    /* font-style: italic; */
+    font-size: 110px;
+    
+    filter: invert();
+    mix-blend-mode: difference;
+    
+    text-shadow: 0 0 10px tomato;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+em {
+    font-style: italic;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+strong {
+    text-decoration: underline;
+}
+
+
+p {
+    text-transform: none;
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Kings Regular";
+    src: url(fonts/Kings-Regular.ttf);
+}
+
+body {
+    background-color: antiquewhite;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(59, 55, 55);
+}
+
+header {
+    background-color: rgba(172, 164, 164, 0.6);
+}
+
+h1, h2, h3 {
+    font-family: "Kings Regular";
+
+    letter-spacing: 3px;
+}
+
+.main_title h1 {
+    font-size: 110px;
+    
+    filter: invert();
+    mix-blend-mode: difference;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(97, 89, 214);
+    
+}
+
+mark {
+    /* Cancel highlight effect */
+    background-color: inherit;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+
+p {
+    text-transform: none;
+}
+
+
+/* Custom */ 
+.main_title {
+    height: 300px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url("images/banner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#genres {
+    background-color: rgba(172, 164, 164, 0.6);
+}
