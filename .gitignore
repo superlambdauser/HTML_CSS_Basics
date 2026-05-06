@@ -1,0 +1,13 @@
+# Visual Studio cache directory
+.vs/
+
+# Système
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Éditeurs
+*.swp
+*.swo
