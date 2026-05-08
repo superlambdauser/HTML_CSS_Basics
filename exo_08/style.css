@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "Kings Regular";
+    src: url(fonts/Kings-Regular.ttf);
+}
+
+h1, h2, h3 {
+    margin: 0; /* Titles have a default margin, reset it */
+    
+    font-family: "Kings Regular";
+    
+    letter-spacing: 3px;
+}
+
+h2 {
+    margin: 0;
+
+    padding-left: 30px;
+
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    
+    color: rgb(97, 89, 214);
+}
+
+mark {
+    /* Cancel highlight (mark) effect */
+    background-color: inherit;
+
+    color: inherit;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0; /* <p> have default margin */
+    text-transform: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: antiquewhite;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(59, 55, 55);
+
+    section {
+        border-radius: 3px;
+    }
+    
+    section:nth-child(even){
+        background-color: rgba(172, 164, 164, 0.6)
+    }
+    
+    section:nth-child(odd){
+        background-color: antiquewhite;
+    }
+
+    header {
+        .banner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            height: 30%;
+            
+            .main_title {    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                /* Background Image : */
+                background-image: url("images/banner.jpg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                min-height: clamp(220px, 40vw, 500px);
+                
+                h1 {
+                    font-size: clamp(40px, 8vw, 110px);
+                    
+                    text-align: center;
+                    
+                    /* Inverted background colors as text color : */
+                    filter: invert();
+                    mix-blend-mode: difference;        
+                }
+            }
+            
+            .navigation {
+                display: flex;
+                
+                justify-content: center;
+                
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    
+                    li {
+                        text-align: center;
+                        display: inline-block;
+                        
+                        margin: 10px 25px;
+
+                        transition: transform 0.15s ease; /* Smooth animation */
+                    }
+
+                    li:hover {
+                        transform: scale(1.1); /* Scales up when hovered */
+                    }
+                }
+            }
+        }
+        
+        #introduction {    
+            .content {
+                display: flex;
+        
+                gap: 10px;
+                padding: 10px;
+                
+                img {
+                    height: 30vh;
+                }
+            }
+        }
+    }
+
+    main {
+        #biologie {
+            padding: 20px;
+    
+            article {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        
+        #corvidés_méconnus {
+            display: flex;
+            flex-direction: column;
+                
+            .cartes {
+                display: flex;
+                
+                justify-content: space-between;
+                
+                gap: 2%;
+                
+                padding: 2%; /* Space between cards */ 
+                
+                .carte {
+                    display: flex;
+                    flex-direction: column;
+        
+                    background-color: rgba(172, 164, 164, 1);
+            
+                    box-sizing: border-box;
+                    border-radius: 2%;
+            
+                    flex: 1;
+            
+                    gap: 20px;
+                    padding: 2%;
+            
+                    h3 {
+                        font-size: clamp(12px, 8vw, 25px)
+                    }
+            
+                    p {
+                        font-size: 13px;
+                    }
+            
+                    button {
+                        background-color: rgba(250, 235, 215, 0.6);
+            
+                        width: 75px;
+                        height: 50px;
+        
+                        margin-top: auto; 
+            
+                        box-sizing: border-box;
+                        border-radius: 10%;
+            
+                        background-image: url("images/camera_icon.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                    button:hover, button:focus {
+                        box-shadow: 2px 2px 2px rgb(59, 55, 55);
+                    }
+
+                    button:focus {
+                        box-shadow: 5px 5px 5px rgb(59, 55, 55);
+                    }
+                }
+            }
+        }
+
+        #genres > ul > li:nth-child(odd) {
+                background-color: rgba(172, 164, 164, 0.2);
+            }
+        }
+    }
+    
+    
+    footer {
+        display: flex;
+
+        justify-content: center;
+        margin: 10px;
+        background-color: rgba(172, 164, 164, 0.6);
+    }
+}
+
