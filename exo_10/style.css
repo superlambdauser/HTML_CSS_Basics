@@ -141,8 +141,13 @@ body {
     }
 
     main {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 50px;
+
         #biologie {
-            padding: 20px;
+            margin-top: 50px;
     
             article {
                 margin-top: 20px;
@@ -213,13 +218,48 @@ body {
             }
         }
     
-        #genres > ul > li:nth-child(odd) {
-                background-color: rgba(172, 164, 164, 0.2);
+        #genres {
+            table, td, th {
+                border: 1px solid rgb(59, 55, 55);
+                border-collapse: collapse;
+            }
+            
+            table {
+                caption {
+                    font-weight: bold;
+                    text-decoration: underline;
+                    margin: 15px 0px;
+                }
+                thead, tbody, tfoot {
+                    th {
+                        background-color: rgba(172, 164, 164, 1);
+                    }
+
+                    th, td {
+                        padding: 5px 10px;
+                    }
+                }
+
+                tbody {
+                    td {
+                        vertical-align: top;
+                    }
+                }
+
+                tfoot {
+                    td {
+                        text-align: right;
+                    }
+                }
+            }
         }
 
         #contact {
             display: flex;
             flex-direction: column;
+
+            margin-bottom: 50px;
+            padding: 20px 10px;
 
             form {
                 display: grid;
